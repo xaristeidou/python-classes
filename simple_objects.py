@@ -10,13 +10,13 @@ class BasicAttributes:
             total_km: float
     ) -> None:
 
-        self.company = company
-        self.model = model
-        self.color = color
-        self.year = year
-        self.cc = cc
-        self.hp = hp
-        self.total_km = total_km
+        self.company: str = company
+        self.model: str = model
+        self.color: str = color
+        self.year: int = year
+        self.cc: int = cc
+        self.hp: int = hp
+        self.total_km: float = total_km
 
     def __str__(self) -> str:
         return f""
