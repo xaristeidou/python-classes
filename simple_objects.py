@@ -39,5 +39,5 @@ basic_chars = BasicAttributes(
     total_km = 365000
 )
 
-# will print the information about this specific car object
+# prints the information about this specific car object
 basic_chars.__str__()
