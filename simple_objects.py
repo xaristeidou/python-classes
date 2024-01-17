@@ -41,3 +41,5 @@ basic_chars = BasicAttributes(
 
 # prints the information about this specific car object
 basic_chars.__str__()
+
+basic_chars.company
