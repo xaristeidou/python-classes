@@ -43,3 +43,4 @@ basic_chars = BasicAttributes(
 basic_chars.__str__()
 
 basic_chars.company
+basic_chars.model
