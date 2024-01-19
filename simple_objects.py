@@ -44,3 +44,4 @@ basic_chars.__str__()
 
 basic_chars.company
 basic_chars.model
+basic_chars.year
