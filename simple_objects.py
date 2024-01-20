@@ -28,7 +28,6 @@ class BasicAttributes:
         f"In total has done {self.total_km} km."
         )
 
-
 basic_chars = BasicAttributes(
     company = "Toyota",
     model = "Starlet",
@@ -45,3 +44,4 @@ basic_chars.__str__()
 basic_chars.company
 basic_chars.model
 basic_chars.year
+basic_chars.cc
