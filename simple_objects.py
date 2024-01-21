@@ -27,6 +27,14 @@ class BasicAttributes:
         f"It is {self.color} and has {self.cc} cc engine and {self.hp} horse power."
         f"In total has done {self.total_km} km."
         )
+    
+    def __repr__(self) -> str:
+        '''
+        __repr__() method provides an example of how to instanciate the object
+        '''
+        return (f"BasicAttributes({self.company}, {self.model}, {self.color}, "
+        f"{self.year}, {self.cc}, {self.hp}, {self.total_km})")
+    
 
 basic_chars = BasicAttributes(
     company = "Toyota",
@@ -40,6 +48,8 @@ basic_chars = BasicAttributes(
 
 # prints the information about this specific car object
 basic_chars.__str__()
+
+basic_chars.__repr__()
 
 basic_chars.company
 basic_chars.model
