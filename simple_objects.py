@@ -35,6 +35,14 @@ class BasicAttributes:
         return (f"BasicAttributes({self.company}, {self.model}, {self.color}, "
         f"{self.year}, {self.cc}, {self.hp}, {self.total_km})")
     
+    def __len__(self) -> int:
+        '''
+        __len__() method returns the length of a specific attribute or whatever
+        we choose to return. We can use >>> return len(vars(self)), to get the
+        number of attributes of the class
+        '''
+        return len(vars(self))
+    
 
 basic_chars = BasicAttributes(
     company = "Toyota",
@@ -50,6 +58,8 @@ basic_chars = BasicAttributes(
 basic_chars.__str__()
 
 basic_chars.__repr__()
+
+basic_chars.__len__()
 
 basic_chars.company
 basic_chars.model
