@@ -1,3 +1,5 @@
+from typing import Union
+
 class BasicAttributes:
     def __init__(
             self,
@@ -50,6 +52,12 @@ class BasicAttributes:
         '''
         return vars(self)
     
+    def __getitem__(self, key) -> Union[str, int, float]:
+        '''
+        __getitem__() method returns the value of an attribute passed as key.
+        '''
+        return vars(self)[f"{key}"]
+    
 
 basic_chars = BasicAttributes(
     company = "Toyota",
@@ -69,3 +77,5 @@ basic_chars.__repr__()
 basic_chars.__len__()
 
 basic_chars._vars()
+
+basic_chars.__getitem__("company")
