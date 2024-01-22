@@ -43,6 +43,13 @@ class BasicAttributes:
         '''
         return len(vars(self))
     
+    def _vars(self):
+        '''
+        _vars() method returns all attributes with corresponding values.
+        This method is not using a built-in function.
+        '''
+        return vars(self)
+    
 
 basic_chars = BasicAttributes(
     company = "Toyota",
@@ -60,6 +67,8 @@ basic_chars.__str__()
 basic_chars.__repr__()
 
 basic_chars.__len__()
+
+basic_chars._vars()
 
 basic_chars.company
 basic_chars.model
