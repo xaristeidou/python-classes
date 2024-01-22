@@ -42,9 +42,6 @@ class BasicAttributes:
         number of attributes of the class
         '''
         return len(vars(self))
-    
-    def __del__(self):
-        pass
 
     def _vars(self) -> dict:
         '''
@@ -72,8 +69,3 @@ basic_chars.__repr__()
 basic_chars.__len__()
 
 basic_chars._vars()
-
-basic_chars.company
-basic_chars.model
-basic_chars.year
-basic_chars.cc
