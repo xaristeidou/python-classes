@@ -43,7 +43,10 @@ class BasicAttributes:
         '''
         return len(vars(self))
     
-    def _vars(self):
+    def __del__(self):
+        pass
+
+    def _vars(self) -> dict:
         '''
         _vars() method returns all attributes with corresponding values.
         This method is not using a built-in function.
