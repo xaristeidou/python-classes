@@ -79,3 +79,11 @@ basic_chars.__len__()
 basic_chars._vars()
 
 basic_chars.__getitem__("company")
+
+'''
+isinstance is a built-in function that is responsible to check if an object
+is an instance of a specific class. Can be used also a tuple of classes to check.
+The example bellow will return True because it check if  basic_chars
+is instance of either BasicAttributes or float.
+'''
+isinstance(basic_chars, (BasicAttributes, float))
