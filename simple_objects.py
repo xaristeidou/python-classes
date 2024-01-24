@@ -87,3 +87,5 @@ The example bellow will return True because it check if  basic_chars
 is instance of either BasicAttributes or float.
 '''
 isinstance(basic_chars, (BasicAttributes, float))
+
+basic_chars.hp
