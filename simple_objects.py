@@ -88,4 +88,9 @@ is instance of either BasicAttributes or float.
 '''
 isinstance(basic_chars, (BasicAttributes, float))
 
-basic_chars.hp
+'''
+hasattr is a built-in function that is responsible to check if an object
+has an attribute that is passed as second argument. Returns True if it does
+otherwise False.
+'''
+hasattr(basic_chars, "company")
