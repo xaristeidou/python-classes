@@ -94,3 +94,6 @@ has an attribute that is passed as second argument. Returns True if it does
 otherwise False.
 '''
 hasattr(basic_chars, "company")
+
+
+###
