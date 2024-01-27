@@ -120,3 +120,11 @@ object = Object(
 )
 
 object.print_func()
+
+
+'''
+An object cannot be empty. If we need for some reason the object to be empty
+we have to use 'pass' in the object.
+'''
+class EmptyObject:
+    pass
