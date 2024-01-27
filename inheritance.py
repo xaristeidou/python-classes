@@ -49,4 +49,5 @@ class Apple(Fruit):
     
 apple = Apple()
 apple.color # will raise an error
-apple.fruit_print_details
+apple.fruit_print_details # will show the method is constructed
+
