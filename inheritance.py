@@ -4,9 +4,9 @@ Parent / Base class which will be inherited from other objects.
 class Fruit:
     def __init__(
             self,
-            fruit_name: str,
-            color: str,
-            weight: float
+            fruit_name: str = "name",
+            color: str = "color",
+            weight: float = 0
     ) -> None:
         self.fruit_name = fruit_name
         self.color = color
@@ -48,4 +48,5 @@ class Apple(Fruit):
 
     
 apple = Apple()
+apple.color # will raise an error
 apple.fruit_print_details
