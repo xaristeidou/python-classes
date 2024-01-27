@@ -1,3 +1,6 @@
+'''
+Parent / Base class which will be inherited from other objects. 
+'''
 class Fruit:
     def __init__(
             self,
@@ -11,3 +14,4 @@ class Fruit:
 
     def fruit_print_details(self) -> None:
         return f"This is a {self.fruit_name}, is {self.color}, and weights {self.weight}"
+    
