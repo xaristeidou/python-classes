@@ -48,7 +48,6 @@ class BasicAttributes:
     def _vars(self) -> dict:
         '''
         _vars() method returns all attributes with corresponding values.
-        This method is not using a built-in function.
         '''
         return vars(self)
     
@@ -95,5 +94,3 @@ otherwise False.
 '''
 hasattr(basic_chars, "company")
 
-
-###
