@@ -94,3 +94,29 @@ otherwise False.
 '''
 hasattr(basic_chars, "company")
 
+
+
+'''
+Usually 'self' is used in __init__ and other methods. This is not mandatory.
+We can use any name we want, but it has to be passed as the first argument in any
+method. Then in this specific method it has to be used with the name that
+has been assigned to it.
+'''
+class Object:
+    def __init__(
+            obj,
+            name,
+            telephone
+    ) -> None:
+        obj.name = name
+        obj.telephone = telephone
+
+    def print_func(object) -> str:
+        return object.name
+    
+object = Object(
+    name="John",
+    telephone=34562392
+)
+
+object.print_func()
