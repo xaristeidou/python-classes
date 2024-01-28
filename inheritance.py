@@ -68,10 +68,7 @@ we have to apply __init__() to the name of the parent class in __init__() of the
 class. Then we can define any new attribute to the child class. 
 '''
 class Apple(Fruit):
-    def __init__(
-            self,
-            quantity:float
-    ) -> None:
+    def __init__(self, quantity:float) -> None:
         Fruit.__init__(self)
         self.quantity = quantity
     
@@ -90,10 +87,7 @@ attribute we can by passing the value of our new attribute to a selected one in 
 __init__() of the Parent class.
 '''
 class Apple(Fruit):
-    def __init__(
-            self,
-            name: str
-    ) -> None:
+    def __init__(self, name: str) -> None:
         Fruit.__init__(
             self,
             fruit_name = name
