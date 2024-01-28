@@ -61,6 +61,26 @@ apple.color
 apple.weight
 apple.fruit_print_details
 
+
+'''
+To define any new attributes and at the same time keep the Parent class attributes
+we have to apply __init__() to the name of the parent class in __init__() of the child
+class. Then we can define any new attribute to the child class. 
+'''
+class Apple(Fruit):
+    def __init__(self, quantity) -> None:
+        Fruit.__init__(self)
+        self.quantity = quantity
+    
+apple = Apple(quantity=10)
+apple.fruit_name
+apple.color
+apple.weight
+apple.quantity
+apple.fruit_print_details()
+
+
+
 apple.color # will raise an error
 apple.fruit_print_details # will show the method is constructed
 
