@@ -52,7 +52,7 @@ Nevertheless, all methods from Parent class are inhereted. If methods use
 attributes they won't be usable, but they are defined.
 '''
 class Apple(Fruit):
-    def __init__(self):
+    def __init__(self) -> None:
         pass
 
 apple = Apple()
