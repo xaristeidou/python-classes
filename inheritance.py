@@ -22,11 +22,7 @@ We can access all the attributes and methods that are assigned to the Parent cla
 class Watermellon(Fruit):
     pass
 
-watermellon = Watermellon(
-    fruit_name="watermellon",
-    color="red_green",
-    weight=10.5
-)
+watermellon = Watermellon()
 
 watermellon.fruit_name
 watermellon.color
