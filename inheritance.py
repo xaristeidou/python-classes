@@ -8,9 +8,9 @@ class Fruit:
             color: str = "color",
             weight: float = 0
     ) -> None:
-        self.fruit_name = fruit_name
-        self.color = color
-        self.weight = weight
+        self.fruit_name: str = fruit_name
+        self.color: str = color
+        self.weight: float = weight
 
     def fruit_print_details(self) -> None:
         return f"This is a {self.fruit_name}, is {self.color}, and weighs {self.weight}"
@@ -32,9 +32,9 @@ watermellon.fruit_print_details()
 
 # inheritance with selecting attributes
 watermellon = Watermellon(
-    fruit_name="watermellon",
-    color="red_green",
-    weight=10.5
+    fruit_name = "watermellon",
+    color = "red_green",
+    weight = 10.5
 )
 
 watermellon.fruit_name
@@ -68,11 +68,14 @@ we have to apply __init__() to the name of the parent class in __init__() of the
 class. Then we can define any new attribute to the child class. 
 '''
 class Apple(Fruit):
-    def __init__(self, quantity) -> None:
+    def __init__(
+            self,
+            quantity:float
+    ) -> None:
         Fruit.__init__(self)
         self.quantity = quantity
     
-apple = Apple(quantity=10)
+apple = Apple(quantity = 10)
 apple.fruit_name
 apple.color
 apple.weight
@@ -87,16 +90,17 @@ attribute we can by passing the value of our new attribute to a selected one in 
 __init__() of the Parent class.
 '''
 class Apple(Fruit):
-    def __init__(self, name) -> None:
-        Fruit.__init__(self, fruit_name = name)
+    def __init__(
+            self,
+            name: str
+    ) -> None:
+        Fruit.__init__(
+            self,
+            fruit_name = name
+        )
 
-apple = Apple(name="apple")
+apple = Apple(name = "apple")
 apple.fruit_name # the default name of the Parent class have been overridden
 apple.color
 apple.weight
 apple.fruit_print_details()
-
-
-apple.color # will raise an error
-apple.fruit_print_details # will show the method is constructed
-
