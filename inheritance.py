@@ -13,7 +13,7 @@ class Fruit:
         self.weight = weight
 
     def fruit_print_details(self) -> None:
-        return f"This is a {self.fruit_name}, is {self.color}, and weights {self.weight}"
+        return f"This is a {self.fruit_name}, is {self.color}, and weighs {self.weight}"
     
 '''
 This is a Child class. It inherites that attributes and methods from the 'Fruit' class
