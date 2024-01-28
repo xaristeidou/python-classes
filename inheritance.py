@@ -81,6 +81,22 @@ apple.fruit_print_details()
 
 
 
+'''
+We can inherite all attributes from Parent class and then override the value of any
+attribute we can by passing the value of our new attribute to a selected one in the
+__init__() of the Parent class.
+'''
+class Apple(Fruit):
+    def __init__(self, name) -> None:
+        Fruit.__init__(self, fruit_name = name)
+
+apple = Apple(name="apple")
+apple.fruit_name # the default name of the Parent class have been overridden
+apple.color
+apple.weight
+apple.fruit_print_details()
+
+
 apple.color # will raise an error
 apple.fruit_print_details # will show the method is constructed
 
