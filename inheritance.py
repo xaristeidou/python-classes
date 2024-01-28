@@ -22,12 +22,24 @@ We can access all the attributes and methods that are assigned to the Parent cla
 class Watermellon(Fruit):
     pass
 
+# simple inheritancde
 watermellon = Watermellon()
+watermellon.fruit_name
+watermellon.color
+watermellon.weight
+watermellon.fruit_print_details()
+
+
+# inheritance with selecting attributes
+watermellon = Watermellon(
+    fruit_name="watermellon",
+    color="red_green",
+    weight=10.5
+)
 
 watermellon.fruit_name
 watermellon.color
 watermellon.weight
-
 watermellon.fruit_print_details()
 
 
