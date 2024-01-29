@@ -98,3 +98,4 @@ apple.fruit_name # the default name of the Parent class have been overridden
 apple.color
 apple.weight
 apple.fruit_print_details()
+
