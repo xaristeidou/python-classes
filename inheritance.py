@@ -168,3 +168,19 @@ apple.fruit_name
 apple.color
 apple.weight
 apple.fruit_print_details()
+
+
+'''
+We can use also the name of the Parent class in __init__ of the Child and then
+use the super() function to denote a method from the Parent class.
+'''
+class Apple(Fruit):
+    def __init__(self):
+        Fruit.__init__(self)
+
+    def fruit_print_details(self) -> None:
+        return super().fruit_print_details()
+
+
+apple = Apple()
+apple.fruit_print_details()
