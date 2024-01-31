@@ -114,3 +114,18 @@ apple.fruit_name
 apple.color
 apple.weight
 apple.fruit_print_details()
+
+
+'''
+We can change any default value of the Parent class by passing the value we want
+to any specific attribute to override.
+'''
+class Apple(Fruit):
+    def __init__(self, name) -> None:
+        super().__init__(fruit_name=name)
+
+apple = Apple(name="apple")
+apple.fruit_name
+apple.color
+apple.weight
+apple.fruit_print_details()
