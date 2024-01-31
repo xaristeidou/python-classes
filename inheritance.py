@@ -129,3 +129,22 @@ apple.fruit_name
 apple.color
 apple.weight
 apple.fruit_print_details()
+
+
+'''
+Defining a method with the same name of the Parent class method name will override it.
+So the method when called will use the new defines method in Child class.
+'''
+class Apple(Fruit):
+    def __init__(self):
+        super().__init__()
+
+    def fruit_print_details(self) -> None:
+        return "Override of the Parent method"
+    
+    
+apple = Apple()
+apple.fruit_name
+apple.color
+apple.weight
+apple.fruit_print_details()
