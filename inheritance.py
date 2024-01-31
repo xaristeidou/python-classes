@@ -106,7 +106,7 @@ It is used instead so the Child class will inherit all methods and attributes fr
 the Parent class.
 '''
 class Apple(Fruit):
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
 apple = Apple()
