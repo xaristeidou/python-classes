@@ -100,3 +100,17 @@ apple.weight
 apple.fruit_print_details()
 
 
+'''
+Instead of the name of the Parent class we can also use the super() function.
+It is used instead so the Child class will inherit all methods and attributes from
+the Parent class.
+'''
+class Apple(Fruit):
+    def __init__(self):
+        super().__init__()
+
+apple = Apple()
+apple.fruit_name
+apple.color
+apple.weight
+apple.fruit_print_details()
