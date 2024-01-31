@@ -148,3 +148,23 @@ apple.fruit_name
 apple.color
 apple.weight
 apple.fruit_print_details()
+
+
+'''
+If we don't want to override we can re-define the method in Child class,
+and use the super().<method_name>() to denote that this is the same exact method
+with the Parent class.
+'''
+class Apple(Fruit):
+    def __init__(self):
+        super().__init__()
+
+    def fruit_print_details(self) -> None:
+        return super().fruit_print_details()
+    
+
+apple = Apple()
+apple.fruit_name
+apple.color
+apple.weight
+apple.fruit_print_details()
