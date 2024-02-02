@@ -121,7 +121,7 @@ We can change any default value of the Parent class by passing the value we want
 to any specific attribute to override.
 '''
 class Apple(Fruit):
-    def __init__(self, name) -> None:
+    def __init__(self, name: str) -> None:
         super().__init__(fruit_name=name)
 
 apple = Apple(name="apple")
