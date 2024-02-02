@@ -2,9 +2,7 @@
 
 ## Structure 
 
-- file0.py
-- file1.py
-- file2.py
-- ....
+- object_methods.py
+- inheritance.py
 
 (To be updated frequently)
