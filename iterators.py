@@ -43,3 +43,30 @@ my_car = Car()
 car_iterator = iter(my_car)
 
 print(next(car_iterator))
+
+
+
+'''
+In this case we can add a statement to check when to raise the StopIteration error
+'''
+class Car:
+    def __iter__(self):
+        self.model = "Toyota"
+        self.total_km = 3000
+        return self
+    
+    def __next__(self):
+        if self.total_km > 3010:
+            raise StopIteration
+        else:
+            x = self.total_km
+            y = self.model
+            self.total_km += 1
+            self.model += "1"
+        return x, y
+    
+
+my_car = Car()
+car_iterator = iter(my_car)
+
+print(next(car_iterator))
