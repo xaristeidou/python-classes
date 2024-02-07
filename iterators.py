@@ -18,3 +18,28 @@ print(next(tuple_iterator))
 print(next(string_iterator))
 print(next(list_iterator))
 
+
+'''
+The __iter__() method works as __init__() method and we can use it to initialize
+any attribute we want. In __iter__() we have to return self.
+The __next__() method is used to define what will happend when someone calls next()
+at an iterable attribute. In this case we add some numbers and append to string.
+'''
+class Car:
+    def __iter__(self):
+        self.model = "Toyota"
+        self.total_km = 3000
+        return self
+    
+    def __next__(self):
+        x = self.total_km
+        y = self.model
+        self.total_km += 1
+        self.model += "1"
+        return x, y
+    
+
+my_car = Car()
+car_iterator = iter(my_car)
+
+print(next(car_iterator))
